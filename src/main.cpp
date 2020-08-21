@@ -1,12 +1,21 @@
 #include <iostream>
-# include "practice.h"
+# include "functions/1/functions.h"
+#include <vector>
+
+using namespace std;
+
 int main() {
-    std::printf("%s, %s\n", "Hello", "world");
-    int *input = new int ;
-    int x = 0;
-    std::printf("Input some number!\n");
-    std::cin  >> *input;
-    do_practice(*input);
+
+    printf("\nInput four numbers\n");
+
+    vector<int *> inputted;
+    for (int i = 1; i < 5; i++) {
+        printf("input %i number:\n", i);
+        auto container = new int;
+        scanf("%i", container);
+        inputted.push_back(container);
+    }
+    printf("Biggest number is %i", find_greatest(inputted));
     return 0;
 
 }
