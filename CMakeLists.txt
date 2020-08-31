@@ -8,3 +8,4 @@ add_executable(ckata src/main.cpp src/pointers/entripoint.cpp src/practice.h src
 add_executable(exceptions src/exceptions/entrypoint.cpp)
 add_executable(bublesort src/bublesort/entrypoint.cpp src/bublesort/sorter)
 add_executable(dynamic-arrays src/dynamic-arrays/entrypoint.cpp)
+add_executable(structs src/structs/entrypoint.cpp)
