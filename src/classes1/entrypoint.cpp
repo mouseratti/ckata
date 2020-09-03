@@ -12,6 +12,7 @@ int main() {
     MyAbstractClass* object2 = new MySuccessorClass1("property2", 4);
     std::cout << "concrete class:" << object1->getName() << object1->getValue() << std::endl;
     std::cout << "successor class:" << object2->getName() << object2->getValue();
-    delete object1, object2;
+    delete object1;
+    delete object2;
 
 }
