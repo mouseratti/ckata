@@ -1,3 +1,5 @@
 project(move-zeroes)
 include_directories(include)
 add_executable(move-zeroes main.cpp Solution.cpp)
+add_library(move-zeroes-lib STATIC Solution.cpp include/Solution.h)
+add_subdirectory(tests)

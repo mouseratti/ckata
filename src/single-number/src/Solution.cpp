@@ -4,7 +4,7 @@
 
 # include "Solution.h"
 // variant 0
-/**# include "map"
+/**# doctest "map"
 int Solution::singleNumber(std::vector<int> &nums) {
 
     auto myMap = new std::map<int, bool>;
