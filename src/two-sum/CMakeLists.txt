@@ -1,2 +1,2 @@
 project(two-sum)
-add_executable(two-sum main.cpp)
+add_executable(tests-two-sum Solution.h tests_Solution.cpp)
